@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor Dashboard</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Common Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Doctor Emergency Dashboard</h2>
+    <div id="cases"></div>
+  </div>
+
+  <!-- 🔥 Firebase SDKs (MUST come first) -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <!-- 🔗 Firebase configuration -->
+  <script src="../js/firebase.js"></script>
+
+  <!-- 📊 Dashboard logic -->
+  <script src="../js/dashboard.js"></script>
+
+</body>
+</html>
