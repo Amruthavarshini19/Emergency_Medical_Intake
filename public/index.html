@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Emergency Medical Intake</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Emergency Medical Intake</h2>
+
+    <p class="subtext">
+      Please answer the following emergency questions using your voice.
+    </p>
+
+    <!-- Question Display -->
+    <div class="question-box">
+      <p id="question"></p>
+    </div>
+
+    <!-- Voice Button -->
+    <button class="primary-btn" onclick="startListening()">
+      🎤 Speak Answer
+    </button>
+
+    <!-- Heard Text -->
+    <p class="heard">
+      <strong>Heard:</strong> <span id="heard">—</span>
+    </p>
+
+    <!-- Auto-filled Form -->
+    <div class="form">
+      <input id="name" placeholder="Patient Name" />
+      <input id="age" placeholder="Age" />
+      <input id="symptoms" placeholder="Symptoms" />
+      <input id="allergies" placeholder="Allergies" />
+      <input id="contact" placeholder="Emergency Contact" />
+    </div>
+
+    <!-- Submit -->
+    <button class="secondary-btn" onclick="submitForm()">
+      Submit Emergency Case
+    </button>
+
+    <p class="status" id="status"></p>
+  </div>
+
+  <!-- JS -->
+  <script src="../js/script.js"></script>
+</body>
+</html>
